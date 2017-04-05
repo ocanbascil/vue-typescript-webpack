@@ -1,5 +1,23 @@
-html, body, #app-main {
-    height: 100%;
+html, body {
+  height: 100%;
+}
+
+.content h1 {
+  text-align: center; }
+
+
+body {
+    padding-top: 10vh;
+}
+
+
+.navigation-wrap {
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+#test-search {
+    margin-bottom: 3vh;
 }
 
 @import '../components/home/home';

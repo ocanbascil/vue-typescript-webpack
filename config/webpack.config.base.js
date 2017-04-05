@@ -21,13 +21,14 @@ let config = {
     rules: [
       {test: /\.ts$/, exclude: /node_modules/, enforce: 'pre', loader: 'tslint-loader'},
       {test: /\.ts$/, exclude: /node_modules/, loader: "awesome-typescript-loader"},
-      {test: /\.html$/, loader: 'raw-loader', exclude: ['./src/index.html']}
+      {test: /\.html$/, loader: 'raw-loader', exclude: ['./src/index.html']},
     ],
   },
   plugins: [
     new CopyWebpackPlugin([
       {from: 'src/assets', to: '../assets'},
-      {from: 'src/css', to: '../css'}
+      {from: 'src/css', to: '../css'},
+      {from: 'src/fonts', to: '../fonts'}
     ]),
     new DefinePlugin({
       'process.env': {
